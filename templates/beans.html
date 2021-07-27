@@ -1,0 +1,563 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<title>COFFER'S 豆の知識</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock header %}
+
+{% block content %}
+<!-- スライダー -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'beans/beans_header01.png' %}" class="d-block h-50 w-100" alt="第1スライド">
+      <div class="carousel-caption d-none d-md-block h-50">
+        <div class="slider-title">
+          <h1 class="title-main">
+            種類が多い！
+          </h1>
+          <br>
+          <h3 class="title-sub">
+            だからスキが見つかる
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'beans/beans_header02.png' %}" class="d-block h-50 w-100" alt="第2スライド">
+      <div class="carousel-caption d-none d-md-block h-50">
+        <div class="slider-title">
+          <h1 class="title-main">
+            新鮮な方が美味い！
+          </h1>
+          <br>
+          <h3 class="title-sub">
+            豆の方が粉より酸化は防げる
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'beans/beans_header03.png' %}" class="d-block h-50 w-100" alt="第3スライド">
+      <div class="carousel-caption d-none d-md-block h-50">
+        <div class="slider-title">
+          <h1 class="title-main">
+            更に楽しく
+          </h1>
+          <br>
+          <h3 class="title-sub">
+            コーヒーミルを使おう
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  <!-- START THE FEATURETTES -->
+<!-- 各項目大見出し -->
+<hr class="featurette-divider">
+  <!-- /END THE FEATURETTES -->
+
+<!-- </div>/.container -->
+
+<section id="powder-beans">
+  <div class="row featurette">
+    <div class="col-md"></div>
+    <div class="col-md-8">
+      <div class="title-header">
+        <h1>
+          豆売りと粉売りの違い
+        </h1>
+        <h3>
+          酸化させないのが肝心！！
+        </h3>
+      </div>
+    </div>
+    <div class="col-md"></div>
+  </div>
+  <div class="row featurette">
+    <div class="col-md"></div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>粉売り</h3>
+          </div>
+          <img src="{% static 'beans/powder.png' %}" class="card-img-top" alt="コーヒー粉売りの画像">
+          <div class="card-body">
+            <h4 class="card-title">メリット</h4>
+            <p class="card-text">
+              コーヒーミルが必要ない
+              <br>
+              挽く時間を節約できる</p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">デメリット</h4>
+            <p class="card-text">
+              酸化のスピートが早い
+              <br>
+              基本的に種類は少ない</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>豆売り</h3>
+          </div>
+          <img src="{% static 'beans/beans.png' %}" class="card-img-top"  alt="コーヒー豆売りの画像">
+          <div class="card-body">
+            <h4 class="card-title">メリット</h4>
+            <p class="card-text">
+              豆を挽く時間を楽しめる
+              <br>
+              酸化のスピートが遅い
+              <br>
+              豆売りの種類が多い
+            </p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">デメリット</h4>
+            <p class="card-text">
+              コーヒーミルが必要
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md"></div>
+  </div>
+</section>
+
+<hr class="featurette-divider">
+
+<section id="Coffee-mill">
+  <div class="row featurette">
+    <div class="col-md"></div>
+    <div class="col-md-8">
+      <div class="title-header">
+        <h1>
+          コーヒーミル
+        </h1>
+        <h3>
+          挽くのを楽しむのも良し！
+        </h3>
+      </div>
+    </div>
+    <div class="col-md"></div>
+  </div>
+  <div class="row featurette">
+    <div class="col-md"></div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>大型電動ミル</h3>
+          </div>
+          <img src="{% static 'beans/coffee-2469286_1280.jpg' %}" class="card-img-top" alt="大型電動ミルの画像">
+          <div class="card-body">
+            <h4 class="card-title">メリット</h4>
+            <p class="card-text">
+              時間をかなり短縮
+              <br>
+              細かく設定できて
+              <br>
+              精度も高い
+            </p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">デメリット</h4>
+            <p class="card-text">
+              値段が高い
+              <br>
+              場所を取る
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>小型と手回し</h3>
+          </div>
+          <img src="{% static 'beans/coffee-3465494_1280.jpg' %}" class="card-img-top" alt="小型ミルの画像">
+          <div class="card-body">
+            <h4 class="card-title">メリット</h4>
+            <p class="card-text">
+              安く手ごろな価格
+              <br>
+              コンパクトな物が多く
+              <br>
+              キャンプなどで使える。
+            </p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">デメリット</h4>
+            <p class="card-text">
+              バラつきが出やすい
+              <br>
+              香りが飛びやすい
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md"></div>
+  </div>
+</section>
+
+<hr class="featurette-divider">
+
+<section id="roasting">
+  <div class="row featurette">
+    <div class="col-md"></div>
+    <div class="col-md-8">
+      <div class="title-header">
+        <h1>
+          焙煎度合いの違い
+        </h1>
+        <h3>
+          『深い』=『苦味』or『浅い』=『酸味』
+        </h3>
+      </div>
+    </div>
+    <div class="col-md"></div>
+  </div>
+  <div class="row featurette">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>深煎り</h3>
+          </div>
+          <img src="{% static 'beans/roast1.png' %}" class="card-img-top" alt="深煎りの画像">
+          <div class="card-body">
+            <h3 class="card-title">苦味が強い</h3>
+            <p class="card-text">エスプレッソを淹れるときに適している</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>中深煎り</h3>
+          </div>
+          <img src="{% static 'beans/roast2.png' %}" class="card-img-top" alt="中深煎りの画像">
+          <div class="card-body">
+            <h3 class="card-title">
+              バランスが良い
+            </h3>
+            <p class="card-text">世界中で好まれている焙煎度合い</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>中煎り</h3>
+          </div>
+          <img src="{% static 'beans/roast3.png' %}" class="card-img-top" alt="中煎りの画像">
+          <div class="card-body">
+            <h3 class="card-title">苦味・酸味が控えめ</h3>
+            <p class="card-text">味を評価する基準の焙煎度合い</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>浅煎り</h3>
+          </div>
+          <img src="{% static 'beans/roast4.png' %}" class="card-img-top" alt="浅煎りの画像">
+          <div class="card-body">
+            <h3 class="card-title">酸味が強め</h3>
+            <p class="card-text">香りを出したいときに適している</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</section>
+
+<hr class="featurette-divider">
+
+<section id="origin">
+  <div class="row featurette">
+    <div class="col-md"></div>
+    <div class="col-md-8">
+      <div class="title-header">
+        <h1>
+          産地による違い
+        </h1>
+        <h3>
+          産地によっても味・風味が違う！
+        </h3>
+        <p>
+          ※こだわるとかなりの玄人！産地に関しては記述のみです。
+        </p>
+      </div>
+    </div>
+    <div class="col-md"></div>
+  </div>
+  <div class="row featurette">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>中南米系</h3>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">バランス型</h3>
+            <p class="card-text">味のバランスが良い豆が多い部類</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>アジア・太平洋系</h3>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">個性派型</h3>
+            <p class="card-text">苦味か酸味のとがった豆が多い部類</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <h3>アフリカ系</h3>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">アロマ型</h3>
+            <p class="card-text">香りが高くコクが強い豆が多い部類</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-1 border bg-light">
+        <div class="card" style="width: 100%;">
+          <div class="card-head">
+            <img src="{% static 'beans/beans_header02.png' %}" class="card-img-top" alt="産地簡易画像">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</section>
+
+<hr class="featurette-divider">
+
+<section id="Beans_Diagnosis">
+  <div class="row featurette">
+    <div class="col-md"></div>
+    <div class="col-md-8">
+      <div class="title-header">
+        <h1>
+          質問に答えてアナタの最適を探そう
+        </h1>
+      </div>
+    </div>
+    <div class="col-md"></div>
+  </div>
+  <!-- 質問のタイトル -->
+  <div class="row featurette">
+    <div class="col-md-2"></div>
+    <div class="col-md">
+      <div class="title-header">
+        <h3>
+          好きそうな焙煎度合いはどれでしょう？
+        </h3>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <!-- 質問のタイトル終了 -->
+  <div class="row row-cols-2 row-cols-md-10">
+    <div class="col-md-2"></div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="roast" value="深煎り" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          深煎り
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="roast" value="中深煎り" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          中深煎り
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="roast" value="中煎り" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          中煎り
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="roast" value="浅煎り" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          浅煎り
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="roast" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          わからない
+        </label>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <p>ラジオボタンを選択しそれぞれのショッピングページに行ってみよう</p>
+
+  <div class="row row-cols-1 row-cols-md-10">
+    <div class="col-md-2"></div>
+    <div class="col-md">
+      <a><input type="button" value="Amazonショッピングページへ" onclick="clickBtnAz()"/></a>
+    </div>
+    <div class="col-md">
+      <a><input type="button" value="楽天ショッピングページへ" onclick="clickBtnRt()"/></a>
+    </div>
+    <div class="col-md">
+      <a><input type="button" value="yahoo!ショッピングページへ" onclick="clickBtnYh()"/></a>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  
+</section>
+
+<hr class="featurette-divider">
+
+{% endblock content %}
+
+{% block script %}
+<!-- アマゾンへのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnAz(){
+  let beans_roa = "";
+  const roast = document.getElementsByName("roast");
+
+  //ボタンチェック
+  for (let i = 0; i < roast.length; i++) {
+    if ( roast[i].checked ){
+      beans_roa = roast[i].value ;
+      break; 
+    }
+  }
+
+  var url = "https://www.amazon.co.jp/s?k="+"コーヒー豆"+" "+beans_roa;
+  location.href = url;
+  return;
+}
+</script>
+
+<!-- 楽天へのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnRt(){
+  let beans_roa = "";
+  const roast = document.getElementsByName("roast");
+
+  //ボタンチェック
+  for (let i = 0; i < roast.length; i++) {
+    if ( roast[i].checked ){
+      beans_roa = roast[i].value ;
+      break; 
+    }
+  }
+
+  var url = "https://search.rakuten.co.jp/search/mall/"+"コーヒー豆"+"+"+beans_roa;
+  location.href = url;
+  return;
+}
+</script>
+
+<!-- ヤフーへのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnYh(){
+  let beans_roa = "";
+  const roast = document.getElementsByName("roast");
+
+  //ボタンチェック
+  for (let i = 0; i < roast.length; i++) {
+    if ( roast[i].checked ){
+      beans_roa = roast[i].value ;
+      break; 
+    }
+  }
+
+  var url = "https://shopping.yahoo.co.jp/search?p="+"コーヒー豆"+" "+beans_roa;
+  location.href = url;
+  return;
+}
+</script>
+
+<!-- アマゾンへのリンクボタン -->
+<!-- <script language="javascript" type="text/javascript">
+  function clickBtnAz(){
+  let beans_roa = "";
+  const roast = document.getElementsByName("roast");
+
+  //ボタンチェック
+  for (let i = 0; i < roast.length; i++) {
+    if ( roast[i].checked ){
+      beans_roa = roast[i].value ;
+      break; 
+    }
+  }
+
+  var url = "https://www.amazon.co.jp/s?k="+"コーヒー豆"+" "+beans_roa;
+  location.href = url;
+  return;
+}
+</script> -->
+{% endblock script %}

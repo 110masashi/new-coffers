@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* .accordion {
+	width: auto;
+	margin: 0 auto;
+} */
+
+.menu {	
+	background-color: #212529;
+	color: #f8f9fa;
+	/* font-size: 18px; */
+	/* padding: 10px; */
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+.menu:hover,
+.manu:active,
+.menu.is-active {
+	background-color: rgba(129, 129, 129, 0.6);
+}
+
+.contents {
+	text-align: center;
+	line-height: 0;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition-duration: 0.4s;
+	background-color: rgba(129, 129, 129, 0.6);
+}
+
+.contents.is-open {
+	line-height: normal;
+	height: auto;
+	opacity: 1;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.slider-title {
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 40%;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #e0e0e0;
+}
+
+.slider-title .title-main {
+	color: rgba(230, 230, 230, 0.9)
+}
+
+.slider-title .title-sub {
+	color: rgba(200, 200, 200, 0.8)
+}
+
+.title-header {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title-header h1 {
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: #e0e0e0;
+}
+
+.title-header h3 {
+	text-align: center;
+	color: #e0e0e0;
+}
+
+.card {
+	text-align: center;
+	color: #e0e0e0;
+}
+
+.card-head {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-body {
+	background-color: rgba(116, 54, 14, 0.7);
+}
+
+.card-title {
+	background-color: rgba(85, 37, 5, 0.7);
+}
+
+.linkarea {
+	text-align: center;
+	display: block;
+}
+
+img {
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+}
+
+.logo {
+	text-align: center;
+	justify-content: center;
+}
+
+.icon ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.icon img {
+	border-radius: 50%;
+	border-width: 4px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.8);
+	width: 50px;
+	height: 50px;
+}
+
+
+/* タブレット用デザイン */
+@media screen and (max-width: 959px) {
+	img {
+		max-width: 959px;
+	}
+}
+
+/* スマホ用デザイン */
+@media screen and (max-widht: 480px) {
+	img {
+		max-width: 480px;
+	}
+}
+

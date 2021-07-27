@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<title>COFFER'S コーヒーログ 詳細</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock header %}
+
+{% block content %}
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-1"></div>
+  <div class="col-md">
+    <div class="p-1 border bg-light">
+      <div class="card" style="width: 100%;">
+        <div class="card-head">
+          <h1>{{ object.category }}</h1>
+        </div>
+        <div class="card-body">
+          <div class="row featurette">
+            <div class="row featurette">
+              <div class="col-md-3">
+                <h4>器具：{{ object.equipment }}</h4>
+              </div>
+              <div class="col-md">
+                <h4>名前：{{ object.Beans_name }}</h4>
+              </div>
+              <div class="col-md-3">
+                <h4>焙煎度：{{ object.roast }}</h4>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h5 class="card-title">{{ object.postdate }}</h5>
+            </div>
+            <div class="col-md-6">
+              <h5 class="card-title">
+                タイトル：{{ object.title }}
+              </h5>
+            </div>
+            <div class="col-md-6">
+              <div class="row featurette">
+                <div class="col-md-6">
+                  <h5 class="card-title">苦味</h5>
+                  <p>{{ object.bitter }}</p>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title">酸味</h5>
+                  <p>{{ object.acidity }}</p>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title">コク</h5>
+                  <p>{{ object.rich }}</p>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title">香り</h5>
+                  <p>{{ object.aroma }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="card-title">{{ object.content }}</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md">
+              <a href="{% url 'list' %}" class="btn btn-primary">一覧へ</a>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+<hr class="featurette-divider">
+{% endblock content %}

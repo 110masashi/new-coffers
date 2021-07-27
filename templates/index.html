@@ -1,0 +1,891 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<title>COFFER'S HOME</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock header %}
+
+{% block content %}
+<!-- スライダー -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'home_header01.png' %}" class="d-block h-50 w-100" alt="第１スライド">
+      <div class="carousel-caption d-none d-md-block h-50">
+        <div class="slider-title">
+          <h1 class="title-main">
+            お家でまったり楽しむ
+          </h1>
+          <br>
+          <h3 class="title-sub">
+            自分自身でリラックス
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'home_header02.png' %}" class="d-block h-50 w-100" alt="第２スライド">
+      <div class="carousel-caption d-none d-md-block h-50">
+        <div class="slider-title">
+          <h1 class="title-main">
+            アナタの好みを見つける
+          </h1>
+          <br>
+          <h3 class="title-sub">
+            種類が多い、好みが見つかる
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'equipment/equipment_header03.png' %}" class="d-block h-50 w-100" alt="第3スライド">
+      <div class="carousel-caption d-none d-md-block h-50">
+        <div class="slider-title">
+          <h1 class="title-main">
+            アナタの好みを見つける
+          </h1>
+          <br>
+          <h3 class="title-sub">
+            種類が多い、好みが見つかる
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- 各項目大見出し -->
+<hr class="featurette-divider">
+
+<section id="beans">
+  <div class="row featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <div class="title-header">
+        <h1>
+          豆にこだわる
+        </h1>
+        <h3>
+          種類が多いアナタのスキが必ずある
+        </h3>
+      </div>
+      <hr class="featurette-divider">
+      <p class="lead">
+        産地や焙煎度合い
+        <br>
+        知れば知るほど奥が深く
+        <br>
+        違いが分かれば好みも見つかる
+      </p>
+      <hr class="featurette-divider">
+      <div class="title-header">
+        <h3>
+          詳細ページ概要
+        </h3>
+      </div>
+      <ul>
+        <li>豆売りと粉売りの違いについて</li>
+        <li>コーヒーミルについて</li>
+        <li>焙煎度合いについて</li>
+        <li>産地による違いについて（※参考程度）</li>
+        <li>最適をショッピングサイトで探そう！</li>
+      </ul>
+      <hr class="featurette-divider">
+      <div class="linkarea">
+        <a href="/beans" target="_self">豆の詳細ページへ</a>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'beans/bean-1512433_1280.jpg' %}" class="d-block w-100">
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</section>
+
+<hr class="featurette-divider">
+
+<section id="equipment">
+  <div class="row featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <div class="title-header">
+        <h1>
+          器具にこだわる
+        </h1>
+        <h3>
+          基本は６種類あなたの良き相棒に
+        </h3>
+      </div>
+      <hr class="featurette-divider">
+      <p class="lead">
+        コーヒーメーカーを除けば
+        <br>
+        この６種類が代表的なコーヒーの淹れ方
+        <br>
+        どう淹れたいかを自分で考え淹れる事ができる
+      </p>
+      <hr class="featurette-divider">
+      <div class="title-header">
+        <h3>
+          詳細ページ概要
+        </h3>
+      </div>
+      <ul>
+        <li>ハンドドリップについて</li>
+        <li>マキネッタについて</li>
+        <li>フレンチプレスについて</li>
+        <li>エアロプレスについて</li>
+        <li>サイフォン式について</li>
+        <li>水出しコーヒーについて</li>
+        <li>最適をショッピングサイトで探そう！</li>
+      </ul>
+      <hr class="featurette-divider">
+      <div class="linkarea">
+        <a href="/equipment">器具の詳細ページへ</a>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'equipment/coffee-984328_1280.jpg' %}" class="d-block w-100">
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</section>
+
+<hr class="featurette-divider">
+
+<section id="water">
+  <div class="row featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <div class="title-header">
+        <h1>
+          水にこだわる
+        </h1>
+        <h3>
+          水が美味だとコーヒーも美味
+        </h3>
+      </div>
+      <hr class="featurette-divider">
+      <p class="lead">
+        日本の水はとてもコーヒーとの相性が良い
+        <br>
+        水道水で淹れても基本美味いが、、、
+        <br>
+        ミネラルウォーターを使って更にこだわった一杯へ
+      </p>
+      <hr class="featurette-divider">
+      <div class="title-header">
+        <h3>
+          詳細ページ概要
+        </h3>
+      </div>
+      <ul>
+        <li>硬度について</li>
+        <li>温度について</li>
+        <li>ポットについて</li>
+        <li>最適をショッピングサイトで探そう！</li>
+      </ul>
+      <hr class="featurette-divider">
+      <div class="linkarea">
+        <a href="/water">水の詳細ページへ</a>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'water/bottle.png' %}" class="d-block w-100">
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</section>
+
+<hr class="featurette-divider">
+
+<!-- <section id="arrange">
+  <div class="row featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <div class="title-header">
+        <h1>
+          アレンジを楽しむ
+        </h1>
+        <h3>
+          苦いだけではない一歩その先へ
+        </h3>
+      </div>
+      <hr class="featurette-divider">
+      <p class="lead">
+        コーヒーをアレンジして
+        <br>
+        更に先のステージへブラック派の人も
+        <br>
+        一度はやってみて試してほしいをここに
+      </p>
+      <hr class="featurette-divider">
+      <div class="title-header">
+        <h3>
+          詳細ページ概要
+        </h3>
+      </div>
+      <ul>
+        <li>硬度について</li>
+        <li>温度について</li>
+        <li>ポットについて</li>
+        <li>最適をショッピングサイトで探そう！</li>
+      </ul>
+      <hr class="featurette-divider">
+      <div class="linkarea">
+        <a href="/arrange">アレンジの詳細ページへ</a>
+      </div>
+
+      <hr class="featurette-divider">
+      
+      <p>
+        アナタのアレンジを投稿し沢山のコーヒー好きとシェアしよう
+        <br>
+        ※投稿にはサインインが必要です
+      </p>
+      <div class="linkarea">
+        <a href="/">サインイン</a>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'coffee-.jpg' %}" class="d-block w-100">
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</section>
+
+<hr class="featurette-divider"> -->
+  
+  <!-- /END THE FEATURETTES -->
+
+<!-- </div>/.container -->
+
+<!-- コーヒー診断 -->
+<section id="Diagnosis">
+  <div class="row featurette">
+    <div class="col-md"></div>
+    <div class="col-md-10">
+      <div class="title-header">
+        <h1>
+          好みが見つかるコーヒー診断
+        </h1>
+      </div>
+    </div>
+    <div class="col-md"></div>
+  </div>
+  <!-- 質問のタイトル -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="title-header">
+        <h3>
+          質問１ 飲むまでの時間
+        </h3>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <!-- 質問のタイトル終了 -->
+  <!-- 質問の段 -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-2 col-md-2"></div>
+    <div class="col col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="equipment1" value="1" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          とにかく早く
+        </label>
+      </div>
+    </div>
+    <div class="col col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="equipment1" value="2" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          多少は問題無し
+        </label>
+      </div>
+    </div>
+    <div class="col col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="equipment1" value="3" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          時間は気にしない
+        </label>
+      </div>
+    </div>
+    <div class="col-2 col-md-2"></div>
+    <!-- 質問の段終了 -->
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- 質問のタイトル -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="title-header">
+        <h3>
+          質問２ 片付けのしやすさ
+        </h3>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <!-- 質問のタイトル終了 -->
+  <!-- 質問の段 -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-md-2"></div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="equipment2" value="2" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          ゴミは最小限で
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="equipment2" value="1" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          洗いやすい
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="equipment2" value="3" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          手間は気にしない
+        </label>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+    <!-- 質問の段終了 -->
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- 質問のタイトル -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="title-header">
+        <h3>
+          質問３ 使用できるスペース
+        </h3>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <!-- 質問のタイトル終了 -->
+  <!-- 質問の段 -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-md-2"></div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="equipment3" value="3" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          大きくて構わない
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="equipment3" value="1" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          付属物を少しならOK
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="equipment3" value="2" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          省スペース
+        </label>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+    <!-- 質問の段終了 -->
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- 質問のタイトル -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="title-header">
+        <h3>
+          質問４ 味の好み
+        </h3>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <!-- 質問のタイトル終了 -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-md-2"></div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="beans1" value="1" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          苦味が好き
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="beans1" value="2" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          バランス重視
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="beans1" value="3" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          酸味が好き
+        </label>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- 質問のタイトル -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="title-header">
+        <h3>
+          質問５ 水道水で淹れるかどうか
+        </h3>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <!-- 質問のタイトル終了 -->
+  <div class="row row-cols-1 featurette">
+    <div class="col-md-2"></div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="water1" value="1" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          家の水が美味しい
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="water1" value="2" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          家の水が美味しくない
+        </label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="water1" value="3" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          キャンプ場・外で楽しむ
+        </label>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <p>
+    最後に診断ボタンをクリックしよう
+    <br>→→ <input type="button" value="診断" onclick="clickBtn1()"/>←←<br>
+    アナタの好みが見つかるかも！
+  </p>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md"></div>
+    <div class="col-md-10">
+      <div class="title-header">
+        <h1>
+          診断結果
+        </h1>
+      </div>
+    </div>
+    <div class="col-md"></div>
+  </div>
+  <div class="row featurette">
+    <div class="col-md-1"></div>
+    <div class="col-md">
+      <div class="card" style="width: auto;">
+        <div class="card-head">
+          <h3>豆</h3>
+        </div>
+        <img src="{% static 'coffee-.jpg' %}" id="b_img" class="card-img-top" alt="カードの画像">
+        <div class="card-body">
+          <h3 class="card-title"><span id="span2"></span></h3>
+          <a href="/beans" class="btn btn-primary nav-link">豆の知識へ飛ぶ</a>
+          <div class="accordion nav-link text-light menu">
+            <p class="js-menu">ショップ</p>
+            <div class="contents" >
+              <a>
+                <input type="button" value="Amazon" onclick="clickBtnAz1()"/>
+                <input type="button" value="楽天" onclick="clickBtnRt1()"/>
+                <input type="button" value="yahoo!" onclick="clickBtnYh1()"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card" style="width: auto;">
+        <div class="card-head">
+          <h3>器具</h3>
+        </div>
+        <img src="{% static 'coffee-.jpg' %}" id="e_img" class="card-img-top" alt="カードの画像">
+        <div class="card-body">
+          <h3 class="card-title"><span id="span1"></span></h3>
+          <a href="/equipment" class="btn btn-primary nav-link">器具の知識へ飛ぶ</a>
+          <div class="accordion nav-link text-light menu">
+            <p class="js-menu">ショップ</p>
+            <div class="contents" >
+              <a>
+                <input type="button" value="Amazon" onclick="clickBtnAz2()"/>
+                <input type="button" value="楽天" onclick="clickBtnRt2()"/>
+                <input type="button" value="yahoo!" onclick="clickBtnYh2()"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card" style="width: auto;">
+        <div class="card-head">
+          <h3>水</h3>
+        </div>
+        <img src="{% static 'coffee-.jpg' %}" id="w_img" class="card-img-top" alt="カードの画像">
+        <div class="card-body">
+          <h3 class="card-title"><span id="span3"></span></h3>
+          <a href="/water" class="btn btn-primary nav-link">水の知識へ飛ぶ</a>
+          <div class="accordion nav-link text-light menu">
+            <p class="js-menu">ショップ</p>
+            <div class="contents" >
+              <a>
+                <input type="button" value="Amazon" onclick="clickBtnAz3()"/>
+                <input type="button" value="楽天" onclick="clickBtnRt3()"/>
+                <input type="button" value="yahoo!" onclick="clickBtnYh3()"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</section>
+
+<hr class="featurette-divider">
+
+{% block script %}
+<!-- コーヒー診断 -->
+<script language="javascript" type="text/javascript">
+  function clickBtn1(){
+    let equ1 = "";
+    let equ2 = "";
+    let equ3 = "";
+    let equ4 = "";
+    let equ5 = "";
+    const equipment1 = document.getElementsByName("equipment1");
+    const equipment2 = document.getElementsByName("equipment2");
+    const equipment3 = document.getElementsByName("equipment3");
+    const beans1 = document.getElementsByName("beans1");
+    const water1 = document.getElementsByName("water1");
+
+    //ボタンチェック 器具
+    for (let i = 0; i < equipment1.length; i++) {
+      if ( equipment1[i].checked ){
+        equ1 = equipment1[i].value ;
+        break; 
+      }
+    }
+    for (let i = 0; i < equipment2.length; i++) {
+      if ( equipment2[i].checked ){
+        equ2 = equipment2[i].value ;
+        break; 
+      }
+    }
+    for (let i = 0; i < equipment3.length; i++) {
+      if ( equipment3[i].checked ){
+        equ3 = equipment3[i].value ;
+        break; 
+      }
+    }
+
+    //ボタンチェック 豆
+    for (let i = 0; i < beans1.length; i++) {
+      if ( beans1[i].checked ){
+        equ4 = beans1[i].value ;
+        break; 
+      }
+    }
+
+    //ボタンチェック 水
+    for (let i = 0; i < water1.length; i++) {
+      if ( water1[i].checked ){
+        equ5 = water1[i].value ;
+        break;
+      }
+    }
+    
+    //器具のオススメサーチ
+    switch(Number(equ1) + Number(equ2) + Number(equ3)){
+      case 3:
+        document.getElementById("span1").textContent = "ハンドドリップ";
+        var img =document.getElementById('e_img');
+        e_img.setAttribute("src", "{% static 'equipment/coffee-984328_1280.jpg' %}");
+        break;
+      case 4:
+        document.getElementById("span1").textContent = "マキネッタ";
+        var img =document.getElementById('e_img');
+        e_img.setAttribute("src", "{% static 'equipment/coffee-791171_1280.jpg' %}");
+        break;
+      case 5:
+          if(equ1 + equ2 + equ3 === "221"){
+            document.getElementById("span1").textContent = "エアロプレス";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/Aeropress.png' %}");
+          } else if (equ1 + equ2 + equ3 === "212") {
+            document.getElementById("span1").textContent = "フレンチプレス";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/Frenchpress.png' %}");
+          } else if (equ1 + equ2 + equ3 === "311") {
+            document.getElementById("span1").textContent = "水出し";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/coldbrew.png' %}");
+          } else {
+            document.getElementById("span1").textContent = "マキネッタ";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/coffee-791171_1280.jpg' %}");
+          }
+        break;
+      case 6:
+          if(equ1 + equ2 + equ3 === "222"){
+            document.getElementById("span1").textContent = "フレンチプレス";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/Frenchpress.png' %}");
+          } else if (equ1 + equ2 + equ3 === "321") {
+            document.getElementById("span1").textContent = "水出し";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/coldbrew.png' %}");
+          } else {
+            document.getElementById("span1").textContent = "マキネッタ";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/coffee-791171_1280.jpg' %}");
+          }
+        break;
+      case 7:
+          if(equ1 + equ2 + equ3 === "133"){
+            document.getElementById("span1").textContent = "ハンドドリップ";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/coffee-984328_1280.jpg' %}");
+          } else if (equ1 + equ2 + equ3 === "223") {
+            document.getElementById("span1").textContent = "フレンチプレス";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/Frenchpress.png' %}");
+          } else if (equ1 + equ2 + equ3 === "232") {
+            document.getElementById("span1").textContent = "フレンチプレス";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/Frenchpress.png' %}");
+          } else if (equ1 + equ2 + equ3 === "322") {
+            document.getElementById("span1").textContent = "エアロプレス";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/Aeropress.png' %}");
+          } else {
+            document.getElementById("span1").textContent = "水出し";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/coldbrew.png' %}");
+          }
+        break;
+      case 8:
+          if(equ1 + equ2 + equ3 === "233"){
+            document.getElementById("span1").textContent = "サイフォン式";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/Siphon.png' %}");
+          } else {
+            document.getElementById("span1").textContent = "水出し";
+            var img =document.getElementById('e_img');
+            e_img.setAttribute("src", "{% static 'equipment/coldbrew.png' %}");
+          }
+        break;
+      case 9:
+        document.getElementById("span1").textContent = "サイフォン式";
+        var img =document.getElementById('e_img');
+        e_img.setAttribute("src", "{% static 'equipment/Siphon.png' %}");
+        break;
+    }
+
+    //豆のオススメサーチ
+    switch(equ4){
+      case "1":
+        document.getElementById("span2").textContent = "深煎り";
+        var img =document.getElementById('b_img');
+        b_img.setAttribute("src", "{% static 'beans/roast1.png' %}");
+        break;
+      case "2":
+        document.getElementById("span2").textContent = "中深煎り・中煎り";
+        var img =document.getElementById('b_img');
+        b_img.setAttribute("src", "{% static 'beans/roast3.png' %}");
+        break;
+      case "3":
+        document.getElementById("span2").textContent = "浅煎り";
+        var img =document.getElementById('b_img');
+        b_img.setAttribute("src", "{% static 'beans/roast4.png' %}");
+        break;
+    }
+
+    //水のオススメサーチ
+    if(equ5 === "1"){
+      document.getElementById("span3").textContent = "水道水";
+      var img =document.getElementById('w_img');
+      w_img.setAttribute("src", "{% static 'water/water.png' %}");
+    } else {
+      document.getElementById("span3").textContent = "ミネラルウォーター";
+      var img =document.getElementById('w_img');
+      w_img.setAttribute("src", "{% static 'water/bottle.png' %}");
+    }
+  }
+</script>
+
+<!-- 豆 -->
+<!-- アマゾンへのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnAz1(){
+  var url = "https://www.amazon.co.jp/s?k="+"コーヒー豆"+" "+span2.textContent;
+  location.href = url;
+  return;
+}
+</script>
+
+<!-- 楽天へのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnRt1(){
+  var url = "https://search.rakuten.co.jp/search/mall/"+"コーヒー豆"+"+"+span2.textContent;
+  location.href = url;
+  return;
+}
+</script>
+
+<!-- ヤフーへのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnYh1(){
+  var url = "https://shopping.yahoo.co.jp/search?p="+"コーヒー豆"+" "+span2.textContent;
+  location.href = url;
+  return;
+}
+</script>
+<!-- 豆ここまで -->
+
+<!-- 器具 -->
+<!-- アマゾンへのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnAz2(){
+  var url = "https://www.amazon.co.jp/s?k="+"コーヒー器具"+" "+span1.textContent;
+  location.href = url;
+  return;
+}
+</script>
+
+<!-- 楽天へのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnRt2(){
+  var url = "https://search.rakuten.co.jp/search/mall/"+"コーヒー器具"+"+"+span1.textContent;
+  location.href = url;
+  return;
+}
+</script>
+
+<!-- ヤフーへのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnYh2(){
+  var url = "https://shopping.yahoo.co.jp/search?p="+"コーヒー器具"+" "+span1.textContent;
+  location.href = url;
+  return;
+}
+</script>
+<!-- 器具ここまで -->
+
+<!-- 水 -->
+<!-- アマゾンへのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnAz3(){
+  if(span3.textContent === "水道水"){
+    document.getElementById("span3").textContent = "";
+    var url = "https://www.amazon.co.jp/s?k="+"水道水を美味しくする"+" "+span3.textContent;
+    location.href = url;
+    return;
+  } else {
+    var url = "https://www.amazon.co.jp/s?k="+"超軟水"+" "+span3.textContent;
+    location.href = url;
+    return;
+  }
+
+}
+</script>
+
+<!-- 楽天へのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnRt3(){
+  if(span3.textContent === "水道水"){
+    document.getElementById("span3").textContent = "";
+    var url = "https://search.rakuten.co.jp/search/mall/"+"水道水を美味しくする"+" "+span3.textContent;
+    location.href = url;
+    return;
+  } else {
+    var url = "https://search.rakuten.co.jp/search/mall/"+"超軟水"+" "+span3.textContent;
+    location.href = url;
+    return;
+  }
+
+}
+</script>
+
+<!-- ヤフーへのリンクボタン -->
+<script language="javascript" type="text/javascript">
+  function clickBtnYh3(){
+  if(span3.textContent === "水道水"){
+    document.getElementById("span3").textContent = "";
+    var url = "https://shopping.yahoo.co.jp/search?p="+"水道水を美味しくする"+" "+span3.textContent;
+    location.href = url;
+    return;
+  } else {
+    var url = "https://shopping.yahoo.co.jp/search?p="+"超軟水"+" "+span3.textContent;
+    location.href = url;
+    return;
+  }
+
+}
+</script>
+<!-- 水ここまで -->
+
+{% endblock script %}
+
+{% endblock content %}
