@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '=b+4@uc7n+-5h8d!6zoke-ruodp^!p6uyah!eor)bt$9yg09)0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['mark34origin.site']
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'coffersapp',
+    'mark34origin.site',
 ]
 
 MIDDLEWARE = [
