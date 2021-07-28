@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'coffersapp',
-    'mark34origin.site',
 ]
 
 MIDDLEWARE = [
@@ -77,23 +76,23 @@ WSGI_APPLICATION = 'coffers.wsgi.application'
 Database
 https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'coffers_db',
-#         'USER': 'masashi',
-#         'PASSWORD': '110masasi410',
-#         'HOST': 'localhost',
-#         'POST': '',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'coffers_db',
+        'USER': 'db_mark34',
+        'PASSWORD': '110masasi410',
+        'HOST': 'localhost',
+        'POST': '',
+    }
+}
 
 
 # Password validation
