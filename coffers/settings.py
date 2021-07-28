@@ -25,7 +25,7 @@ SECRET_KEY = '=b+4@uc7n+-5h8d!6zoke-ruodp^!p6uyah!eor)bt$9yg09)0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mark34origin.site']
 
 
 # Application definition
