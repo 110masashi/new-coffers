@@ -87,8 +87,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'coffers_db',
-        'USER': 'db_itoumasashi',
-        'PASSWORD': 'mark34masa',
+        'USER': 'masashi',
+        'PASSWORD': '110masasi410',
         'HOST': 'localhost',
         'POST': '',
     }
