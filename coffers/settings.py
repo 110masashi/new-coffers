@@ -25,7 +25,7 @@ SECRET_KEY = '=b+4@uc7n+-5h8d!6zoke-ruodp^!p6uyah!eor)bt$9yg09)0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mark34origin.site']
+ALLOWED_HOSTS = ['mark34origin.site', 'localhost']
 
 
 # Application definition
@@ -72,9 +72,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'coffers.wsgi.application'
 
-
-Database
-https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+# Databases 
+# https://docs.djangoproject.com/en/3.1/ref/settings/
 
 # DATABASES = {
 #     'default': {
